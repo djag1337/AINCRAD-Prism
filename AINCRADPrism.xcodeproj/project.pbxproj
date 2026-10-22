@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0FE08340B1C84641828C3856 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8C2FDAB5E07627C7F12BD7C /* Assets.xcassets */; };
 		27EF4C7B17B43BB6CDF27A7B /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE8C6358AE0747D0C51AD6 /* Theme.swift */; };
 		29AE56AD79DEFE284E6AB5DE /* PrismApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBDFD69FE770CC4F6473A99 /* PrismApp.swift */; };
 		6667186CA10B37E875EA2D4D /* ThemeEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE7F66D4E73B0E1D3854437 /* ThemeEditor.swift */; };
@@ -29,6 +30,7 @@
 		68AE8C6358AE0747D0C51AD6 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		BDBF7080DD59B0CC3FF98833 /* ThemeStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeStore.swift; sourceTree = "<group>"; };
 		C59011FED18738FC2738FC3D /* AINCRADPrismTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AINCRADPrismTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8C2FDAB5E07627C7F12BD7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E37423DEC796F61B474E2664 /* PrismTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrismTests.swift; sourceTree = "<group>"; };
 		E71D8134C86BFFB8A45EE66F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		EEBDFD69FE770CC4F6473A99 /* PrismApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrismApp.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 		C538B11CBC273A65B90053EE /* Prism */ = {
 			isa = PBXGroup;
 			children = (
+				D8C2FDAB5E07627C7F12BD7C /* Assets.xcassets */,
 				E71D8134C86BFFB8A45EE66F /* Info.plist */,
 				EEBDFD69FE770CC4F6473A99 /* PrismApp.swift */,
 				68AE8C6358AE0747D0C51AD6 /* Theme.swift */,
@@ -100,6 +103,7 @@
 			buildConfigurationList = AE1A3C9F76B2AF3629D5CD93 /* Build configuration list for PBXNativeTarget "AINCRADPrism" */;
 			buildPhases = (
 				30B081DB36C165516484D1A3 /* Sources */,
+				5A59D23216C43A12D38D6592 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -142,6 +146,17 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5A59D23216C43A12D38D6592 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FE08340B1C84641828C3856 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0CC946135D5657451E385334 /* Sources */ = {
@@ -212,6 +227,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -271,6 +287,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
