@@ -7,12 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06F5F0500D8C7FFE3FFA628A /* Rajdhani-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FB66E83B4F6B2C243BD0BE39 /* Rajdhani-Medium.ttf */; };
 		0FE08340B1C84641828C3856 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8C2FDAB5E07627C7F12BD7C /* Assets.xcassets */; };
 		27EF4C7B17B43BB6CDF27A7B /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE8C6358AE0747D0C51AD6 /* Theme.swift */; };
 		29AE56AD79DEFE284E6AB5DE /* PrismApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBDFD69FE770CC4F6473A99 /* PrismApp.swift */; };
+		3DF6771D119BC0E3B12A0EAB /* PrismStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FCC74527E962DFAD467DC9 /* PrismStyle.swift */; };
+		3FCD24483317E12DE5664FA4 /* Orbitron-wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8DE2778A4061031AFB173F03 /* Orbitron-wght.ttf */; };
+		58597CD54305272E859C8800 /* OFL-Rajdhani.txt in Resources */ = {isa = PBXBuildFile; fileRef = DAF7E425CC34AD064400131F /* OFL-Rajdhani.txt */; };
+		59F1D19CE0D83D28AAFD888C /* Rajdhani-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE72ECCBD6A8538DF646F4EA /* Rajdhani-Bold.ttf */; };
 		6667186CA10B37E875EA2D4D /* ThemeEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE7F66D4E73B0E1D3854437 /* ThemeEditor.swift */; };
 		794F171B35D2701CFBA68F91 /* PrismTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37423DEC796F61B474E2664 /* PrismTests.swift */; };
+		7CF0CF60D1814BA17F4D9E94 /* OFL-Orbitron.txt in Resources */ = {isa = PBXBuildFile; fileRef = F1D8E2A126AF9E0D753AB290 /* OFL-Orbitron.txt */; };
 		C21B17907638C5F79AFD8AC7 /* ThemeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDBF7080DD59B0CC3FF98833 /* ThemeStore.swift */; };
+		DB2F2F34362081074B3C81AD /* Rajdhani-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0BD3A14E02FBCC2C05A2711A /* Rajdhani-SemiBold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,18 +33,38 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0BD3A14E02FBCC2C05A2711A /* Rajdhani-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rajdhani-SemiBold.ttf"; sourceTree = "<group>"; };
+		18FCC74527E962DFAD467DC9 /* PrismStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrismStyle.swift; sourceTree = "<group>"; };
 		5F8DBF09685D05A357E606DF /* AINCRADPrism.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AINCRADPrism.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68AE8C6358AE0747D0C51AD6 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		8DE2778A4061031AFB173F03 /* Orbitron-wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Orbitron-wght.ttf"; sourceTree = "<group>"; };
 		BDBF7080DD59B0CC3FF98833 /* ThemeStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeStore.swift; sourceTree = "<group>"; };
 		C59011FED18738FC2738FC3D /* AINCRADPrismTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AINCRADPrismTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE72ECCBD6A8538DF646F4EA /* Rajdhani-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rajdhani-Bold.ttf"; sourceTree = "<group>"; };
 		D8C2FDAB5E07627C7F12BD7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DAF7E425CC34AD064400131F /* OFL-Rajdhani.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "OFL-Rajdhani.txt"; sourceTree = "<group>"; };
 		E37423DEC796F61B474E2664 /* PrismTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrismTests.swift; sourceTree = "<group>"; };
 		E71D8134C86BFFB8A45EE66F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		EEBDFD69FE770CC4F6473A99 /* PrismApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrismApp.swift; sourceTree = "<group>"; };
+		F1D8E2A126AF9E0D753AB290 /* OFL-Orbitron.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "OFL-Orbitron.txt"; sourceTree = "<group>"; };
 		FAE7F66D4E73B0E1D3854437 /* ThemeEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeEditor.swift; sourceTree = "<group>"; };
+		FB66E83B4F6B2C243BD0BE39 /* Rajdhani-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rajdhani-Medium.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
+		1120E36C52415DF8670D21D4 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F1D8E2A126AF9E0D753AB290 /* OFL-Orbitron.txt */,
+				DAF7E425CC34AD064400131F /* OFL-Rajdhani.txt */,
+				8DE2778A4061031AFB173F03 /* Orbitron-wght.ttf */,
+				CE72ECCBD6A8538DF646F4EA /* Rajdhani-Bold.ttf */,
+				FB66E83B4F6B2C243BD0BE39 /* Rajdhani-Medium.ttf */,
+				0BD3A14E02FBCC2C05A2711A /* Rajdhani-SemiBold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		4D868C6527A262FE0C68B6E5 = {
 			isa = PBXGroup;
 			children = (
@@ -70,11 +97,21 @@
 				D8C2FDAB5E07627C7F12BD7C /* Assets.xcassets */,
 				E71D8134C86BFFB8A45EE66F /* Info.plist */,
 				EEBDFD69FE770CC4F6473A99 /* PrismApp.swift */,
+				18FCC74527E962DFAD467DC9 /* PrismStyle.swift */,
 				68AE8C6358AE0747D0C51AD6 /* Theme.swift */,
 				FAE7F66D4E73B0E1D3854437 /* ThemeEditor.swift */,
 				BDBF7080DD59B0CC3FF98833 /* ThemeStore.swift */,
+				D9D28F99F2BFE413CCF87F63 /* Resources */,
 			);
 			path = Prism;
+			sourceTree = "<group>";
+		};
+		D9D28F99F2BFE413CCF87F63 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1120E36C52415DF8670D21D4 /* Fonts */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,6 +190,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FE08340B1C84641828C3856 /* Assets.xcassets in Resources */,
+				7CF0CF60D1814BA17F4D9E94 /* OFL-Orbitron.txt in Resources */,
+				58597CD54305272E859C8800 /* OFL-Rajdhani.txt in Resources */,
+				3FCD24483317E12DE5664FA4 /* Orbitron-wght.ttf in Resources */,
+				59F1D19CE0D83D28AAFD888C /* Rajdhani-Bold.ttf in Resources */,
+				06F5F0500D8C7FFE3FFA628A /* Rajdhani-Medium.ttf in Resources */,
+				DB2F2F34362081074B3C81AD /* Rajdhani-SemiBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,6 +215,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				29AE56AD79DEFE284E6AB5DE /* PrismApp.swift in Sources */,
+				3DF6771D119BC0E3B12A0EAB /* PrismStyle.swift in Sources */,
 				27EF4C7B17B43BB6CDF27A7B /* Theme.swift in Sources */,
 				6667186CA10B37E875EA2D4D /* ThemeEditor.swift in Sources */,
 				C21B17907638C5F79AFD8AC7 /* ThemeStore.swift in Sources */,

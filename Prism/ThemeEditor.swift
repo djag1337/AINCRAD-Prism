@@ -45,7 +45,7 @@ struct ThemeEditor: View {
 
 struct ColorField: View {
     let label: String; @Binding var value: String
-    var body: some View { LabeledContent(label) { HStack { TextField("#RRGGBB", text: $value).font(.system(.body, design: .monospaced)).frame(width: 110); ColorPicker("", selection: Binding(get: { Color(nsColor: NSColor(themeHex:value) ?? .magenta) }, set: { value = NSColor($0).themeHex }), supportsOpacity: true).labelsHidden() } } }
+    var body: some View { LabeledContent(label) { HStack { TextField("#RRGGBB", text: $value).font(.system(.body, design: .monospaced)).frame(width: 140); ColorPicker("", selection: Binding(get: { Color(nsColor: NSColor(themeHex:value) ?? .magenta) }, set: { value = NSColor($0).themeHex }), supportsOpacity: true).labelsHidden() } } }
 }
 
 struct ThemePreview: View {

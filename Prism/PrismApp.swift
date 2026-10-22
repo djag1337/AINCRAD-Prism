@@ -2,6 +2,7 @@ import SwiftUI
 
 @main struct PrismApp: App {
     @StateObject private var store = ThemeStore()
+    init() { PrismStyle.registerFonts() }
     var body: some Scene {
         WindowGroup { ContentView().environmentObject(store).frame(minWidth: 1040, minHeight: 700) }
         .windowStyle(.titleBar)
@@ -13,16 +14,20 @@ struct ContentView: View {
     @EnvironmentObject var store: ThemeStore
     @State private var importing = false
     @State private var exporting = false
+    private var accent: Color { PrismStyle.accent(for: store.theme) }
+
     var body: some View {
         NavigationSplitView {
-            VStack(spacing: 8) {
+            VStack(alignment: .leading, spacing: 8) {
+                Text("THEMES").font(PrismStyle.label()).tracking(2).foregroundStyle(.secondary).padding(.horizontal, 6)
                 List(store.ids, id: \.self, selection: Binding(get: { store.selection }, set: { store.select($0) })) { id in
                     VStack(alignment: .leading, spacing: 2) {
-                        Text(store.selection == id ? store.theme.name : displayName(id)).fontWeight(id == store.globalTheme ? .semibold : .regular)
+                        Text(store.selection == id ? store.theme.name : displayName(id))
+                            .font(PrismStyle.body(15)).fontWeight(id == store.globalTheme ? .semibold : .regular)
                         HStack(spacing: 5) {
                             Text(id).font(.caption).foregroundStyle(.secondary)
-                            if id == store.globalTheme { Text("AINCRAD").badgeStyle() }
-                            if id == store.browserTheme { Text("BROWSER").badgeStyle() }
+                            if id == store.globalTheme { Text("AINCRAD").badgeStyle(accent) }
+                            if id == store.browserTheme { Text("BROWSER").badgeStyle(.secondary) }
                         }
                     }.tag(id)
                 }
@@ -37,17 +42,21 @@ struct ContentView: View {
         } detail: {
             VStack(spacing: 0) {
                 toolbar
-                Divider()
+                Rectangle().fill(accent).frame(height: 2)
                 HSplitView { ThemeEditor().environmentObject(store); ThemePreview(theme: store.theme).frame(minWidth: 310, idealWidth: 360) }
             }
         }
         .fileImporter(isPresented: $importing, allowedContentTypes: [.json]) { result in if case .success(let url) = result { store.importTheme(url) } }
         .fileExporter(isPresented: $exporting, document: ThemeDocument(theme: store.theme), contentType: .json, defaultFilename: store.selection) { result in if case .success(let url) = result { store.message = "Exported \(url.lastPathComponent)." } }
+        .tint(accent)
         .alert("AINCRAD Prism", isPresented: Binding(get: { store.message != nil }, set: { if !$0 { store.message = nil } })) { Button("OK") {} } message: { Text(store.message ?? "") }
     }
     private var toolbar: some View {
         HStack(spacing: 8) {
-            VStack(alignment: .leading) { Text("AINCRAD PRISM").font(.title2.bold()); Text("The sole theme workshop for the AINCRAD ecosystem").font(.caption).foregroundStyle(.secondary) }
+            VStack(alignment: .leading, spacing: 2) {
+                Text("AINCRAD PRISM").font(PrismStyle.title(18)).tracking(3).foregroundStyle(accent).lineLimit(1).fixedSize()
+                Text("The sole theme workshop for the AINCRAD ecosystem").font(PrismStyle.body(13)).foregroundStyle(.secondary)
+            }
             Spacer()
             Menu("Assign") {
                 Button("Use across AINCRAD") { store.assignGlobal(store.selection) }
@@ -75,7 +84,12 @@ struct ContentView: View {
     }
 }
 
-extension View { func badgeStyle() -> some View { self.font(.system(size: 8, weight: .bold)).padding(.horizontal, 4).padding(.vertical, 2).background(.orange.opacity(0.18), in: Capsule()) } }
+extension View {
+    func badgeStyle(_ color: Color) -> some View {
+        self.font(PrismStyle.label(9)).foregroundStyle(color).padding(.horizontal, 5).padding(.vertical, 1)
+            .background(color.opacity(0.16), in: Capsule())
+    }
+}
 
 import UniformTypeIdentifiers
 struct ThemeDocument: FileDocument {
