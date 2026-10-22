@@ -1,0 +1,403 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		27EF4C7B17B43BB6CDF27A7B /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68AE8C6358AE0747D0C51AD6 /* Theme.swift */; };
+		29AE56AD79DEFE284E6AB5DE /* PrismApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBDFD69FE770CC4F6473A99 /* PrismApp.swift */; };
+		6667186CA10B37E875EA2D4D /* ThemeEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE7F66D4E73B0E1D3854437 /* ThemeEditor.swift */; };
+		794F171B35D2701CFBA68F91 /* PrismTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37423DEC796F61B474E2664 /* PrismTests.swift */; };
+		C21B17907638C5F79AFD8AC7 /* ThemeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDBF7080DD59B0CC3FF98833 /* ThemeStore.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		31360565E851124B948FB8DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 48DEEEF276F867465C11C70D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DF5FC6E88BD728A4370EF62;
+			remoteInfo = AINCRADPrism;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5F8DBF09685D05A357E606DF /* AINCRADPrism.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AINCRADPrism.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		68AE8C6358AE0747D0C51AD6 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		BDBF7080DD59B0CC3FF98833 /* ThemeStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeStore.swift; sourceTree = "<group>"; };
+		C59011FED18738FC2738FC3D /* AINCRADPrismTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AINCRADPrismTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E37423DEC796F61B474E2664 /* PrismTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrismTests.swift; sourceTree = "<group>"; };
+		E71D8134C86BFFB8A45EE66F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		EEBDFD69FE770CC4F6473A99 /* PrismApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrismApp.swift; sourceTree = "<group>"; };
+		FAE7F66D4E73B0E1D3854437 /* ThemeEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeEditor.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		4D868C6527A262FE0C68B6E5 = {
+			isa = PBXGroup;
+			children = (
+				C538B11CBC273A65B90053EE /* Prism */,
+				83D7F50A520E1C8C1AD4B20E /* PrismTests */,
+				7A43645E12EEB2A7974D7072 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7A43645E12EEB2A7974D7072 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5F8DBF09685D05A357E606DF /* AINCRADPrism.app */,
+				C59011FED18738FC2738FC3D /* AINCRADPrismTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		83D7F50A520E1C8C1AD4B20E /* PrismTests */ = {
+			isa = PBXGroup;
+			children = (
+				E37423DEC796F61B474E2664 /* PrismTests.swift */,
+			);
+			path = PrismTests;
+			sourceTree = "<group>";
+		};
+		C538B11CBC273A65B90053EE /* Prism */ = {
+			isa = PBXGroup;
+			children = (
+				E71D8134C86BFFB8A45EE66F /* Info.plist */,
+				EEBDFD69FE770CC4F6473A99 /* PrismApp.swift */,
+				68AE8C6358AE0747D0C51AD6 /* Theme.swift */,
+				FAE7F66D4E73B0E1D3854437 /* ThemeEditor.swift */,
+				BDBF7080DD59B0CC3FF98833 /* ThemeStore.swift */,
+			);
+			path = Prism;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		39864BAB8AD6458DE02BD9F7 /* AINCRADPrismTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2710247E1BCDCB75E46DA9A /* Build configuration list for PBXNativeTarget "AINCRADPrismTests" */;
+			buildPhases = (
+				0CC946135D5657451E385334 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				79B581B7E8DAEEE41D663769 /* PBXTargetDependency */,
+			);
+			name = AINCRADPrismTests;
+			packageProductDependencies = (
+			);
+			productName = AINCRADPrismTests;
+			productReference = C59011FED18738FC2738FC3D /* AINCRADPrismTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8DF5FC6E88BD728A4370EF62 /* AINCRADPrism */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE1A3C9F76B2AF3629D5CD93 /* Build configuration list for PBXNativeTarget "AINCRADPrism" */;
+			buildPhases = (
+				30B081DB36C165516484D1A3 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AINCRADPrism;
+			packageProductDependencies = (
+			);
+			productName = AINCRADPrism;
+			productReference = 5F8DBF09685D05A357E606DF /* AINCRADPrism.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		48DEEEF276F867465C11C70D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = 4D6E382D14383EA763073E2E /* Build configuration list for PBXProject "AINCRADPrism" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 4D868C6527A262FE0C68B6E5;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 7A43645E12EEB2A7974D7072 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8DF5FC6E88BD728A4370EF62 /* AINCRADPrism */,
+				39864BAB8AD6458DE02BD9F7 /* AINCRADPrismTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0CC946135D5657451E385334 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				794F171B35D2701CFBA68F91 /* PrismTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30B081DB36C165516484D1A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29AE56AD79DEFE284E6AB5DE /* PrismApp.swift in Sources */,
+				27EF4C7B17B43BB6CDF27A7B /* Theme.swift in Sources */,
+				6667186CA10B37E875EA2D4D /* ThemeEditor.swift in Sources */,
+				C21B17907638C5F79AFD8AC7 /* ThemeStore.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		79B581B7E8DAEEE41D663769 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8DF5FC6E88BD728A4370EF62 /* AINCRADPrism */;
+			targetProxy = 31360565E851124B948FB8DB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0265B1F1AEBAF62E81704EAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Prism/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.djag.aincrad.prism;
+				PRODUCT_NAME = "AINCRAD Prism";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		68DD6ED39985BDACF7E1D8E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.djag.aincrad.prism.tests;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AINCRAD Prism.app/Contents/MacOS/AINCRAD Prism";
+			};
+			name = Release;
+		};
+		75895B500BD3D392C6149327 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_HARDENED_RUNTIME = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		C1DB18CEEDD3651858A5F0EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_HARDENED_RUNTIME = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D1DE7C1720D174B41D70BD0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Prism/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.djag.aincrad.prism;
+				PRODUCT_NAME = "AINCRAD Prism";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		E3409EBDF64FE9E0BEC77611 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.djag.aincrad.prism.tests;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AINCRAD Prism.app/Contents/MacOS/AINCRAD Prism";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4D6E382D14383EA763073E2E /* Build configuration list for PBXProject "AINCRADPrism" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1DB18CEEDD3651858A5F0EB /* Debug */,
+				75895B500BD3D392C6149327 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		AE1A3C9F76B2AF3629D5CD93 /* Build configuration list for PBXNativeTarget "AINCRADPrism" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1DE7C1720D174B41D70BD0A /* Debug */,
+				0265B1F1AEBAF62E81704EAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B2710247E1BCDCB75E46DA9A /* Build configuration list for PBXNativeTarget "AINCRADPrismTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3409EBDF64FE9E0BEC77611 /* Debug */,
+				68DD6ED39985BDACF7E1D8E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 48DEEEF276F867465C11C70D /* Project object */;
+}

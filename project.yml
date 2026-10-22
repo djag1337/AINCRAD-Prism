@@ -1,0 +1,55 @@
+name: AINCRADPrism
+options:
+  bundleIdPrefix: com.djag
+  deploymentTarget:
+    macOS: "14.0"
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    MACOSX_DEPLOYMENT_TARGET: "14.0"
+    MARKETING_VERSION: "1.0.0"
+    CURRENT_PROJECT_VERSION: "1"
+    ENABLE_HARDENED_RUNTIME: NO
+targets:
+  AINCRADPrism:
+    type: application
+    platform: macOS
+    sources: [Prism]
+    info:
+      path: Prism/Info.plist
+      properties:
+        CFBundleDisplayName: AINCRAD Prism
+        CFBundleShortVersionString: "$(MARKETING_VERSION)"
+        CFBundleVersion: "$(CURRENT_PROJECT_VERSION)"
+        LSApplicationCategoryType: public.app-category.graphics-design
+        NSPrincipalClass: NSApplication
+        CFBundleDocumentTypes:
+          - CFBundleTypeName: AINCRAD Theme
+            CFBundleTypeRole: Editor
+            LSHandlerRank: Owner
+            LSItemContentTypes: [public.json]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.djag.aincrad.prism
+        PRODUCT_NAME: AINCRAD Prism
+        GENERATE_INFOPLIST_FILE: NO
+  AINCRADPrismTests:
+    type: bundle.unit-test
+    platform: macOS
+    sources: [PrismTests]
+    dependencies:
+      - target: AINCRADPrism
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.djag.aincrad.prism.tests
+        TEST_HOST: "$(BUILT_PRODUCTS_DIR)/AINCRAD Prism.app/Contents/MacOS/AINCRAD Prism"
+        BUNDLE_LOADER: "$(TEST_HOST)"
+        GENERATE_INFOPLIST_FILE: YES
+schemes:
+  AINCRADPrism:
+    build:
+      targets:
+        AINCRADPrism: all
+        AINCRADPrismTests: [test]
+    test:
+      targets: [AINCRADPrismTests]
